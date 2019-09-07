@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from apps.moods import urls as moods_urls
+from apps.accounts.urls import accounts_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include(moods_urls))
+    path('api/',include(moods_urls)),
+    path('api/',include(accounts_urls))
 ]
