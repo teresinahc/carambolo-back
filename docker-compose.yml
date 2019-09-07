@@ -20,6 +20,6 @@ services:
     container_name: db_carambolo
     volumes:
       - mydb:/var/lib/postgresql/data
-    expose:
-      - 5432
+    ports:
+      - "5432:5432"
     restart: always
