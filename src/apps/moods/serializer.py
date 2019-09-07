@@ -5,4 +5,4 @@ class MoodSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Mood
-        fields = '__all__'
+        exclude = ('created_at', 'updated_at',)
