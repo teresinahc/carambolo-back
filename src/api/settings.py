@@ -41,10 +41,13 @@ DEFAULT_APPS = [
 ]
 
 LOCAL_APPS = [
-    "apps.common"
+    "apps.common",
+    "apps.moods",
 ]
 
-THIRD_PARTY_APPS = []
+THIRD_PARTY_APPS = [
+    'rest_framework'
+]
 
 INSTALLED_APPS = (
     DEFAULT_APPS + LOCAL_APPS + THIRD_PARTY_APPS
